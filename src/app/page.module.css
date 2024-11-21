@@ -1,0 +1,26 @@
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade_right {
+  display: inline-block; /* Allow transform animations to work */
+  animation: fadeRight 0.5s ease-out forwards;
+}
+
+.fade_right_delay_100 {
+  display: inline-block; /* Allow transform animations to work */
+  animation: fadeRight 0.5s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.fade_right_delay_200 {
+  animation: fadeRight 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
