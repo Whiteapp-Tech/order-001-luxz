@@ -7,7 +7,6 @@ export const ContactSection = () => {
   const [email, setEmail] = React.useState<string>("");
   const [name, setName] = React.useState<string>("");
   const [content, setContent] = React.useState<string>("");
-  const [loading, setLoading] = React.useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
