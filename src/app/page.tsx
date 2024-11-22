@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 // Container
 import {
@@ -10,44 +11,15 @@ import {
 
 // Component
 import Navbar from "@/components/layout/navbar";
-import { CardExpertise, CardOffers } from "@/components/custom/card";
+import { CardOffers } from "@/components/custom/card";
+import { ContactSection } from "@/components/section/contact";
+import { Footer } from "@/components/layout/footer";
 
 // Image
 import hero_img from "@/assets/image/background/hero.jpg";
 import wave_img from "@/assets/image/illustration/wave.svg";
 
-import exp1 from "@/assets/image/component/audience.jpg";
-import exp2 from "@/assets/image/component/analytic.jpg";
-import exp3 from "@/assets/image/component/growth.jpg";
-import exp4 from "@/assets/image/component/marketing.jpg";
-import { ContactSection } from "@/components/section/contact";
-import { Footer } from "@/components/layout/footer";
-import Link from "next/link";
-
 const App = () => {
-  const list_experties = [
-    {
-      title: "AUDIENCE CONNECTION",
-      text: "We craft strategies that build meaningful relationships with your audience, focusing on genuine engagement that fosters trust and loyalty.",
-      img: exp1,
-    },
-    {
-      title: "DATA-DRIVEN INSIGHT",
-      text: "By analyzing market trends and consumer behaviors, we design tailored solutions that align with your brand’s identity and resonate with your target client.",
-      img: exp2,
-    },
-    {
-      title: "SUSTAINABLE GROWTH",
-      text: "Our organic approach ensures consistent, long-term success by emphasizing quality over quantity and building a loyal customer base.",
-      img: exp3,
-    },
-    {
-      title: "Innovative Marketing Techniques",
-      text: "Our organic approach ensures consistent, long-term success by emphasizing quality over quantity and building a loyal customer base.",
-      img: exp4,
-    },
-  ];
-
   return (
     <ContainerPages>
       <div>
