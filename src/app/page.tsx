@@ -85,7 +85,9 @@ const App = () => {
                   href={"https://wa.me/+2349161683740"}
                   className={`w-[200px] border border-white h-[64px] ${styles.fade_right}`}
                 >
-                  <p className="text-white w-full h-full flex justify-center items-center">Let's get started</p>
+                  <p className="text-white w-full h-full flex justify-center items-center">
+                    Let's get started
+                  </p>
                 </Link>
               </div>
             </ContainerContent>
@@ -147,27 +149,59 @@ const App = () => {
               <div>
                 <h4 className="font-bold text-[32px]">Why Choose Luxz?</h4>
                 <p className="text-[#676767] text-justify">
-                  At Luxz, we specialize in crafting organic growth strategies
-                  that prioritize sustainable, long-term success, allowing your
-                  brand to grow authentically without taking shortcuts. With an
-                  in-depth understanding of the luxury market, we know how to
-                  position your brand to captivate affluent audiences and
-                  dominate in competitive markets. We believe that no two brands
-                  are the same, which is why we create bespoke strategies
-                  tailored to reflect your brand’s unique identity, ensuring it
-                  stands out while maintaining exclusivity. Our proven track
-                  record speaks for itself, as brands trust us to deliver
-                  measurable results that enhance their reputation and foster
-                  lasting customer loyalty. Above all, we are committed to
-                  excellence in every aspect of our work, ensuring that your
-                  brand achieves the highest standards of success, prestige, and
-                  recognition in the luxury space.
+                  At Luxz, we are passionate about helping luxury brands achieve
+                  sustainable and authentic growth. While we are just starting
+                  out, our dedication to understanding the nuances of the luxury
+                  market enables us to create tailored strategies that resonate
+                  with affluent audiences and position your brand for long-term
+                  success. We believe in crafting bespoke solutions that reflect
+                  your brand’s unique identity, ensuring it stands out in a
+                  competitive landscape. Our commitment to excellence drives us
+                  to deliver strategies that enhance your brand’s reputation and
+                  foster lasting customer loyalty. Partner with us to elevate
+                  your brand’s presence and build a foundation for success in
+                  the luxury market.
                 </p>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {list_experties.map((item, i) => {
-                  return <CardExpertise data={item} key={i} index={i} />;
-                })}
+              <div className="flex justify-end max-md:justify-center">
+                <div className="w-2/3 max-md:w-full">
+                  <h5 className="font-bold text-[32px]">
+                    Helping Your Business Grow
+                  </h5>
+                  <p className="text-[#676767] text-justify">
+                    At Luxz, we understand the intricacies of running a luxury
+                    brand. Our approach focuses on strengthening the foundation
+                    of your business by providing innovative and strategic
+                    solutions tailored to your unique needs. From enhancing
+                    brand visibility in competitive markets to building a loyal
+                    customer base, we help you unlock untapped potential. Our
+                    strategies are designed not just for short-term gains but
+                    for long-term sustainability, ensuring your brand remains a
+                    leader in the luxury industry. By aligning your vision with
+                    actionable goals, we empower your business to grow, adapt,
+                    and thrive in an ever-evolving marketplace.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-start max-md:justify-center">
+                <div className="w-2/3 max-md:w-full">
+                  <h5 className="font-bold text-[32px]">Boosting Your Sales</h5>
+                  <p className="text-[#676767] text-justify">
+                    Sales are the lifeblood of any business, especially in the
+                    luxury sector, where customer expectations are at their
+                    peak. Luxz specializes in creating dynamic, results-driven
+                    sales strategies that cater specifically to your high-end
+                    clientele. We help you identify and capitalize on
+                    opportunities to boost revenue, improve customer
+                    acquisition, and drive conversions. Whether through
+                    optimizing your sales funnel, refining your customer
+                    journey, or leveraging data-driven insights, our team
+                    ensures your sales performance not only meets but exceeds
+                    your expectations. With Luxz, your brand will consistently
+                    deliver a premium experience that turns prospects into loyal
+                    patrons and fuels your business growth.
+                  </p>
+                </div>
               </div>
             </div>
           </ContainerContent>
