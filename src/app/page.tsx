@@ -42,22 +42,22 @@ const App = () => {
           <div className="w-full h-full absolute top-0 left-0 z-30">
             <ContainerContent>
               <div className="w-full h-full flex flex-col justify-center max-md:items-center gap-4">
-                <h1 className="text-white text-[24px] max-md:text-[16px] max-md:text-center uppercase max-md:leading-[40px] leading-[60px]">
+                <h1 className="text-white text-[24px] max-md:text-[12px] max-md:text-center uppercase max-md:leading-[40px] leading-[60px]">
                   <span className={`ml-2  max-md:ml-0 ${styles.fade_right}`}>
                     We help luxury brand grows and
                   </span>
                   <br />
                   <span
-                    className={`text-[128px] max-md:text-[64px] font-bold ${styles.fade_right}`}
+                    className={`text-[128px] max-md:text-[40px] font-bold ${styles.fade_right}`}
                   >
                     dominate
                   </span>
                 </h1>
                 <Link
                   href={"https://wa.me/+2349161683740"}
-                  className={`w-[200px] border border-white h-[64px] ${styles.fade_right}`}
+                  className={`w-[200px] border border-white h-[64px] max-md:w-[120px] max-md:h-[40px] max-md:border-0 max-md:border-b ${styles.fade_right}`}
                 >
-                  <p className="text-white w-full h-full flex justify-center items-center">
+                  <p className="text-white w-full h-full flex justify-center items-center max-md:text-[12px]">
                     Let's get started
                   </p>
                 </Link>
@@ -65,9 +65,9 @@ const App = () => {
             </ContainerContent>
           </div>
         </section>
-        <section className="w-full py-[100px] bg-black">
+        <section className="w-full py-[100px] max-md:py-[40px] bg-black">
           <ContainerContent>
-            <div className="flex w-full flex-col mt-[64px] gap-[80px]">
+            <div className="flex w-full flex-col mt-[64px] gap-[80px] max-md:gap-[40px]">
               <div className="w-full flex justify-end">
                 <CardOffers
                   direction="right"
@@ -117,10 +117,12 @@ const App = () => {
         </div>
         <section className="w-full py-[100px] bg-white">
           <ContainerContent>
-            <div className="w-full h-full flex flex-col gap-[80px]">
+            <div className="w-full h-full flex flex-col gap-[80px] max-md:px-4">
               <div>
-                <h4 className="font-bold text-[32px]">Why Choose Luxz?</h4>
-                <p className="text-[#676767] text-justify">
+                <h4 className="font-bold text-[32px] max-md:text-[24px] max-md:text-center">
+                  Why Choose Luxz?
+                </h4>
+                <p className="text-[#676767] text-justify ">
                   At Luxz, we are passionate about helping luxury brands achieve
                   sustainable and authentic growth. While we are just starting
                   out, our dedication to understanding the nuances of the luxury
@@ -134,46 +136,6 @@ const App = () => {
                   your brand’s presence and build a foundation for success in
                   the luxury market.
                 </p>
-              </div>
-              <div className="flex justify-end max-md:justify-center">
-                <div className="w-2/3 max-md:w-full">
-                  <h5 className="font-bold text-[32px]">
-                    Helping Your Business Grow
-                  </h5>
-                  <p className="text-[#676767] text-justify">
-                    At Luxz, we understand the intricacies of running a luxury
-                    brand. Our approach focuses on strengthening the foundation
-                    of your business by providing innovative and strategic
-                    solutions tailored to your unique needs. From enhancing
-                    brand visibility in competitive markets to building a loyal
-                    customer base, we help you unlock untapped potential. Our
-                    strategies are designed not just for short-term gains but
-                    for long-term sustainability, ensuring your brand remains a
-                    leader in the luxury industry. By aligning your vision with
-                    actionable goals, we empower your business to grow, adapt,
-                    and thrive in an ever-evolving marketplace.
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-start max-md:justify-center">
-                <div className="w-2/3 max-md:w-full">
-                  <h5 className="font-bold text-[32px]">Boosting Your Sales</h5>
-                  <p className="text-[#676767] text-justify">
-                    Sales are the lifeblood of any business, especially in the
-                    luxury sector, where customer expectations are at their
-                    peak. Luxz specializes in creating dynamic, results-driven
-                    sales strategies that cater specifically to your high-end
-                    clientele. We help you identify and capitalize on
-                    opportunities to boost revenue, improve customer
-                    acquisition, and drive conversions. Whether through
-                    optimizing your sales funnel, refining your customer
-                    journey, or leveraging data-driven insights, our team
-                    ensures your sales performance not only meets but exceeds
-                    your expectations. With Luxz, your brand will consistently
-                    deliver a premium experience that turns prospects into loyal
-                    patrons and fuels your business growth.
-                  </p>
-                </div>
               </div>
             </div>
           </ContainerContent>

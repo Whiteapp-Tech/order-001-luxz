@@ -27,7 +27,7 @@ export const CardOffers: React.FC<CardOffersProps> = ({
     <div className="w-2/3 max-md:w-full">
       <h4
         className={`
-            w-full text-white uppercase max-md:text-[32px]
+            w-full text-white uppercase max-md:text-[24px]
             ${size ? size : "text-[24px]"}
             ${font ? font : "font-outfit"}
             ${direction === "right" ? "text-end" : "text-start"}
@@ -37,7 +37,7 @@ export const CardOffers: React.FC<CardOffersProps> = ({
         {title}
       </h4>
       <p
-        className="text-neutral-500 text-justify"
+        className="text-neutral-500 text-justify max-md:text-[12px]"
         data-aos={direction === "right" ? "fade-left" : "fade-right"}
         data-aos-delay={100}
       >
@@ -84,7 +84,9 @@ export const CardExpertise: React.FC<CardExpertiseProps> = ({
         />
       </div>
       <div>
-        <p className="text-neutral-600">{data.text}</p>
+        <p className="text-neutral-600">
+          {data.text}
+        </p>
       </div>
     </div>
   );

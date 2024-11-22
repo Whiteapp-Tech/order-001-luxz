@@ -34,25 +34,25 @@ Messages:
   return (
     <div className="w-full">
       <ContainerContent>
-        <div className="w-full flex max-md:flex-col max-md:gap-[60px]">
-          <div className="w-1/2 max-md:w-full flex justify-center flex-col">
-            <h3 className="font-bold tracking-[1px] uppercase text-white text-[40px]">
+        <div className="w-full flex max-md:flex-col max-md:gap-[0px]">
+          <div className="w-1/2 max-md:w-full flex justify-center flex-col max-md:px-4">
+            <h3 className="font-bold tracking-[1px] uppercase text-white text-[40px] max-md:text-[24px]">
               connect to us now!
             </h3>
-            <h4 className="font-medium text-medium text-[20px] text-white">
+            <h4 className="font-medium text-medium text-[20px] max-md:text-[14px] text-white">
               You have come all the way here, why don’t take the first step and
               send us an email?
             </h4>
-            <p className="text-neutral-400">
+            <p className="text-neutral-400 max-md:text-[12px]">
               We provide any consultation for your business. We will help you
               understand the details and requirements for your next ventures in
               the brand world. Reach out to us and step-up your business with
               ease.
             </p>
           </div>
-          <div className="w-1/2 max-md:w-full max-md:px-0 max-md:mt-[20px] px-2">
-            <form className="w-full" onSubmit={handleSubmit}>
-              <div className="flex w-full gap-2 pr-2">
+          <div className="w-1/2 max-md:w-full  max-md:px-0 max-md:mt-[20px] px-2">
+            <form className="w-full max-md:p-4" onSubmit={handleSubmit}>
+              <div className="flex w-full gap-2 pr-2 max-md:flex-col">
                 <InputText
                   name="name"
                   label="Name"
@@ -70,14 +70,14 @@ Messages:
                 />
               </div>
               <div className="mt-4">
-                <label htmlFor="messages" className="text-white">
+                <label htmlFor="messages" className="text-white max-md:text-[12px]">
                   Messages
                 </label>
                 <textarea
                   name="messages"
                   id="messages"
                   rows={10}
-                  className="w-full resize-none p-2 text-[14px] text-black font-outfit border border-neutral-200"
+                  className="w-full resize-none p-2 text-[14px] max-md:text-[12px] text-black font-outfit border border-neutral-200"
                   placeholder="Describe your project or the services you need from us"
                   value={content}
                   onChange={(e) => setContent(e.target.value)}
@@ -115,14 +115,17 @@ const InputText: React.FC<InputTextProps> = ({
   onChange,
 }) => {
   return (
-    <div className="flex-col w-1/2 flex">
-      <label htmlFor={name} className="text-[14px] font-medium text-white">
+    <div className="flex-col w-1/2 max-md:w-full flex">
+      <label
+        htmlFor={name}
+        className="text-[14px] font-medium text-white max-md:text-[12px]"
+      >
         {label}
       </label>
       <input
         name={name}
         type={type ? type : "text"}
-        className="border-b border-neutral-200 text-white p-2 bg-transparent font-outfit text-[14px]"
+        className="border-b border-neutral-200 text-white p-2 bg-transparent font-outfit text-[14px] max-md:text-[12px]"
         placeholder={placeholder}
         value={value}
         onChange={onChange}

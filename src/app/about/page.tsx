@@ -14,7 +14,7 @@ const Aboutpages = () => {
           <Navbar />
           <div className="w-full h-full flex justify-center items-center flex-col px-4">
             <div className="relative mb-[220px] max-lg:mb-[120px]">
-              <h1 className="uppercase text-white font-garamond text-[256px] max-md:leading-[60px] max-md:text-center max-md mb-[20px] max-lg:text-[128px] max-md:text-[64px]">
+              <h1 className="uppercase text-white font-garamond text-[256px] max-md:leading-[60px] max-md mb-[20px] max-lg:text-[128px] max-md:text-[64px]">
                 about
                 <br />
                 <span className="hidden max-md:block">us</span>
@@ -34,26 +34,16 @@ const Aboutpages = () => {
                   us
                 </h1>
               </div>
-              <div className="hidden max-lg:flex flex-col">
-                <p className="text-white uppercase text-center text-[12px]">
-                  WE ARE HERE TO HELP YOU BUILD BUSINESS A SUSTAINABLE, GROWING,
-                  AND WORLD CLASS BUSINESS
-                </p>
-                <p className="text-white uppercase text-center text-[12px]">
-                  LEVERAGING EXTREME MARKETING STRATEGY TAILORED TO BRING THE
-                  BEST OUT OF YOUR BUSINESS
-                </p>
-              </div>
             </div>
           </div>
         </section>
-        <section className="w-full py-[100px] bg-black">
+        <section className="w-full py-[100px] max-md:py-[40px] bg-black">
           <ContainerContent>
             <div className="w-full">
-              <h2 className=" font-garamond text-[40px] text-white mb-[40px]">
+              <h2 className=" font-garamond text-[40px] text-white mb-[40px] max-md:text-[24px]">
                 How We Started: The Inspiration Behind luXzSales
               </h2>
-              <p className="text-white text-justify">
+              <p className="text-white text-justify max-md:text-[12px]">
                 The journey that led to the creation of luXzSales began under
                 the name "The Luxury Sales Trybe." Initially, I ventured into
                 the online space, selling digital products, but I had little
@@ -104,7 +94,7 @@ const Aboutpages = () => {
                 thought), but know that it is possible. Keep pushing forward,
                 and the results will follow.
               </p>
-              <p className="mt-[40px] text-neutral-500 text-[20px]">
+              <p className="mt-[40px] text-neutral-500 text-[20px] max-md:text-[14px]">
                 — Peter Ndifreke David
               </p>
             </div>

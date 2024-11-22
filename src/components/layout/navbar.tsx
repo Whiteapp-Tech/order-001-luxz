@@ -56,11 +56,11 @@ const Navbar = () => {
       <ContainerContent>
         <div className="w-full flex justify-between items-center h-full">
           <div className="flex items-center gap-4">
-            <Link href={"/"} className="pr-8 border-r border-white/20">
+            <Link href={"/"} className="pr-8 border-r max-md:border-r-0 border-white/20">
               {isScrolled ? (
-                <Image src={logo_dark} alt="logo" className="" />
+                <Image src={logo_dark} alt="logo" className=" max-md:w-[40px]" />
               ) : (
-                <Image src={logo} alt="logo" className="" />
+                <Image src={logo} alt="logo" className=" max-md:w-[40px]" />
               )}
             </Link>
 
@@ -85,9 +85,7 @@ const Navbar = () => {
             <Link href="/">
               <Mail size={16} />
             </Link>
-            <Link
-              href={"/"}
-            >
+            <Link href={"/"}>
               <Facebook size={16} />
             </Link>
             <Link href={"https://www.instagram.com/luxzsales/"}>
